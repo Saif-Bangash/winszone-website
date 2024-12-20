@@ -1,0 +1,317 @@
+.main-card-ul {
+    background-color: yellow;
+}
+
+.hashtag {
+    font-size: small;
+    font-weight: bold;
+    list-style: none;
+}
+.newssource {
+    font-size: small;
+    font-weight: bold;
+    list-style: none;
+
+}
+.newslink {
+    color: black;
+   font-size: small;
+}
+.newslink:hover {
+    text-decoration: underline; 
+    color: #007bff;
+    list-style: none; 
+  }
+  .newstime {
+    font-size: small;
+    font-weight:bold;
+    list-style: none;
+  }
+  .card .card-body ul {
+    font-size: small;
+    font-weight: bold;
+  }
+  .card .card-body ul .card-timeago {
+    color: black;
+  }
+  .card .card-text {
+    font-size:  14px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .hover-show:hover + .position-relative ul {
+    display: block;
+  }
+  
+  .position-relative ul {
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    top: -250%; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .position-relative:hover ul {
+    display: block;
+    opacity: 1;
+  }
+
+  ::placeholder {
+    color: white !important;
+  }.some-container {
+    word-break: break-word;
+  }
+  
+  .card .hashtag-link{
+    background-color: #007bff;
+    color: white;
+    position: absolute;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 11px !important; 
+    display: block; 
+    font-weight: 500 !important;
+    right: 5px;
+    padding:  5px;
+  }
+  .img {
+    max-width: 100% !important;
+    height: auto;
+}
+  
+  
+  .custom-tab-btn {
+     font-size: small;
+     font-weight:500;
+     padding-top: 8px;
+     margin-bottom: 8px;
+    border: 1.5px solid #007bff;
+  }
+  .custom-tab-btn :active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff; 
+  }
+  
+  .custom-tab-btn:hover {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+ 
+.Author-Button {
+  background-color: rgba(35, 82, 238, 0.1); 
+  padding: 10px; 
+  cursor: pointer;
+  font-size: smaller;  
+}
+
+.Author-Button:hover {
+  background-color: #007bff;  
+}
+
+.Author-Button:hover li {
+  list-style: none; 
+  color: white;
+}
+/* Styling for the promo box container */
+.promo-box {
+  width: 100%;
+  height: 550px;
+  background-color: gray;
+  padding: 0;
+  border-radius: 8px;
+  position: relative;
+}
+/* For screens 576px or smaller */
+@media (max-width: 576px) {
+  .news-item {
+    display: flex;
+    flex-direction: column !important;  
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;  
+  }
+
+  .news-item .news-image {
+    width: 100px !important;  
+    height: 100px !important;  
+    margin-bottom: 15px; 
+    margin: 0 auto 15px auto!important;  
+  }
+
+  .news-item .news-content {
+    display: block;
+    width: 100%;  
+    margin-top: 15px;  
+  }
+  .news-item ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;  
+    list-style: none;  
+    padding-left: 0;
+  }
+
+  .news-item ul li {
+    font-size: 12px; 
+    margin-bottom: 12px; 
+    display: block;  
+  }
+  .newstime,
+  .hashtag,
+  .newssource {
+    display: block;  
+    font-size: 12px;
+    margin-bottom: 8px; 
+    text-align: center; 
+  }
+
+  .hashtag a,
+  .newssource a {
+    font-size: 12px; 
+    text-decoration: none; 
+    color: #007bff;  
+  }
+  .newslink {
+    font-size: 16px; 
+    font-weight: 600; 
+    margin-top: 10px;  
+    display: block;  
+    text-align: center;  
+  }
+
+  .newslink:hover {
+    text-decoration: underline;  
+  }
+}
+
+.promo-box h5 {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100%;
+  bottom: 139px;
+  right: 0px;
+  min-width: 240px;
+  letter-spacing: -0.03em;  
+  font-size: 26px; 
+  line-height: 36px;
+  text-align: center;
+}
+
+/* Styling for the close button */
+.close-promo-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+}
+
+.close-promo-box:hover {
+  background-color: #ff1a1a;
+}
+
+/* Styling for the span (ad text) */
+.promo-box .ad-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-align: center;
+  background-color: yellow;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+@media (min-width : 768px) {
+  .promo-box h5 {
+    width: 100% !important;
+    right: -50px !important;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .promo-box .ad-text {
+    padding: 2px 2px;
+  }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+  .col-sm-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .custom-tab-btn {
+    font-size: 12px; 
+    padding: 6px 10px; 
+    width: auto; 
+    min-width: 90px; 
+  }
+  .list-unstyled {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .d-flex {
+    flex-direction: row !important; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+  }
+  .custom-tab-btn:hover {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+
+  .gap-3 {
+    gap: 1rem; 
+  }
+
+  .list-unstyled li {
+    display: inline-block;
+    width: auto;
+  }
+
+  .list-unstyled {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .author {
+    display: flex;
+    flex-direction: column; 
+    justify-content: left !important;
+  }
+
+  .author .ms-5 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author .author-maintext {
+    font-size: 18px; 
+  }
+
+  .author .Author-Button {
+    margin-top: 8px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .author .author-text {
+    margin-bottom: 10px; /* Add some space below the text rounded box */
+  }
+}

@@ -1,0 +1,53 @@
+.dark-icon {
+  filter: brightness(10) invert(1);
+}
+.hrline {
+  width: 72rem;
+  margin-left: 40px;
+  height: 2px;
+  background-color: black;
+}
+@media (max-width: 1024px) {
+  .hrline {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+.offcanvas {
+  background-color: black;
+}
+.custom-letter-spacing {
+  line-height: 2rem;
+}
+
+.white-icon {
+  filter: brightness(10) invert(1);
+}
+.btn-close {
+  color: white;
+  filter: brightness(3) invert(1);
+  background-color: transparent;
+}
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn.style-two {
+  color: #2352ee;
+  border: 1px solid #2352ee;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn.style-two:hover {
+  background-color: #2352ee;
+  color: white;
+}
